@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #778da9,#415a77, #1b263b, #0d1b2a);
+    background-size: 400% 400%;
+    animation: change 20s ease infinite;
+    font-family: 'Courier Prime';font-size: 22px;
+}
+
+
+.card {
+    position: absolute;
+    flex-basis: auto;
+    top: 6vh;
+    left: 35vw;
+    width: 500px;
+    background-color: #e0e1dd;
+    display: flex;
+    border-radius: 20px;
+    padding: 1.5rem;
+    animation: fadeIn 5s;
+    box-shadow: 10px 5px #463f3a;
+    line-height: 1.7rem;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.top {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.links {
+    width: 40%;
+    padding: 5%;
+}
+
+.languages {
+    line-height: 2rem;
+    padding: 1.3rem;
+}
+
+.IG {
+  color: black;
+  padding: 1.3rem;
+  
+}
+
+a:hover {
+    color: blue;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 10px 5px #463f3a;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-size: 25px;
+    color: #0096c7;
+}
+
+.hobbies {
+    padding: 1.3rem;
+    line-height: 2rem;
+}
+.description {
+    font-size: 20px;
+    width: 100%;
+}
+
+html {
+    overflow: hidden;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
